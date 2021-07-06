@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I1v-qc-jIi">
-                                <rect key="frame" x="16" y="64" width="358" height="750"/>
+                                <rect key="frame" x="16" y="144" width="358" height="564"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 재생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-ZM-fxo">
                                         <rect key="frame" x="113.66666666666666" y="0.0" width="131" height="32"/>
@@ -28,24 +28,44 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pl-bY-fz2">
-                                        <rect key="frame" x="0.0" y="32" width="358" height="327"/>
-                                        <state key="normal" title="Button" image="FastTyping.jpg"/>
-                                        <connections>
-                                            <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYW-Za-ogt"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2J-jp-nOp">
+                                        <rect key="frame" x="29" y="32" width="300" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pl-bY-fz2">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="qL1-sP-wiA"/>
+                                                    <constraint firstAttribute="width" constant="150" id="soV-w9-VT7"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="FastTyping.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYW-Za-ogt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-EM-P26">
+                                                <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="01W-i4-Np6"/>
+                                                    <constraint firstAttribute="width" constant="150" id="DzS-PO-6Lj"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Mountaineering.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayInternalMovieMov:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgb-hD-Nn5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHx-al-R2I">
-                                        <rect key="frame" x="154" y="359" width="50" height="32"/>
+                                        <rect key="frame" x="154" y="182" width="50" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="wqr-Vm-wDO"/>
+                                            <constraint firstAttribute="height" constant="200" id="wqr-Vm-wDO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외부 링크 비디오 재생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-k1-sEG">
-                                        <rect key="frame" x="106.33333333333333" y="391" width="145.66666666666669" height="32"/>
+                                        <rect key="frame" x="106.33333333333333" y="382" width="145.66666666666669" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="8eb-Kf-PlN"/>
                                         </constraints>
@@ -53,23 +73,45 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1j-6F-7qS">
-                                        <rect key="frame" x="0.0" y="423" width="358" height="327"/>
-                                        <state key="normal" title="Button" image="Fireworks.jpg"/>
-                                        <connections>
-                                            <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZa-E7-5cM"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IB0-Dc-FhZ">
+                                        <rect key="frame" x="29" y="414" width="300" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1j-6F-7qS">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Hw4-su-eTr"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="JzD-Ta-hYQ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="UAV-CY-u9n"/>
+                                                    <constraint firstAttribute="width" constant="150" id="zMC-ea-dFu"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Fireworks.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZa-E7-5cM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-hh-alE">
+                                                <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="1R9-lS-NU3"/>
+                                                    <constraint firstAttribute="height" constant="150" id="qbP-bb-a9M"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Seascape.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayExternalMovieMov:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TEo-jh-6ua"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="e1j-6F-7qS" firstAttribute="height" secondItem="0Pl-bY-fz2" secondAttribute="height" id="7N4-6O-Lfl"/>
+                                    <constraint firstItem="5Ch-hh-alE" firstAttribute="height" secondItem="ha4-EM-P26" secondAttribute="height" id="SQU-aW-P9Y"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="I1v-qc-jIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="15c-qo-i12"/>
+                            <constraint firstItem="I1v-qc-jIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="15c-qo-i12"/>
                             <constraint firstItem="I1v-qc-jIi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FAB-d4-KX0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1v-qc-jIi" secondAttribute="trailing" constant="16" id="Nk0-RI-jWh"/>
                             <constraint firstAttribute="bottom" secondItem="I1v-qc-jIi" secondAttribute="bottom" constant="30" id="mAs-UP-264"/>
@@ -84,6 +126,8 @@
     <resources>
         <image name="FastTyping.jpg" width="640" height="360"/>
         <image name="Fireworks.jpg" width="640" height="360"/>
+        <image name="Mountaineering.jpg" width="640" height="360"/>
+        <image name="Seascape.jpg" width="640" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

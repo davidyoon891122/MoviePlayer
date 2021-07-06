@@ -29,6 +29,21 @@ class ViewController: UIViewController {
         playVideo(url: url)
     }
     
+    @IBAction func btnPlayInternalMovieMov(_ sender: UIButton) {
+        let filePath: String? = Bundle.main.path(forResource: "Mountaineering", ofType:"mov")
+        let url = NSURL(fileURLWithPath: filePath!)
+        
+        playVideo(url: url)
+    }
+    
+    
+    @IBAction func btnPlayExternalMovieMov(_ sender: UIButton) {
+        let url = NSURL(string: "https://dl.dropboxusercontent.com/s/ijybpprsmx0bgre/Seascape.mov")!
+        playVideo(url: url)
+        
+    }
+    
+    
     private func playVideo(url: NSURL) {
         let playerContoller = AVPlayerViewController()
         let player = AVPlayer(url: url as URL)
